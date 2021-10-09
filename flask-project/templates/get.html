@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>GET</h3>
+ <!-- Hello,{{ name }} ! -->
+
+ {{ number }}
+
+ {% if number%15==0 %}
+ <h2>{{ number }}:fizzbuzz</h2>
+ {% elif number%3==0 %}
+ <h2>{{ number }}:fizz</h2>
+ {% elif number%5==0 %}
+ <h2>{{ number }}:buzz</h2>
+ {% else %}
+ <h2>{{ number }}:fizzでもbuzzでもない</h2>
+ {% endif %}
+
+
+ {% set sosu =namespace(text='素数です') %}
+ {% for p in number2 %}
+
+ {% if number%p==0 %}
+ {% set sosu.text ='素数ではありません' %}
+ 
+ {% endif %}
+
+ {% endfor %}
+ <h2>{{number}}は{{sosu.text}}</h2>
+
+{% endblock %}

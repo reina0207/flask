@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3>プロフィール</h3>
+<table borfer=1>
+<tr>
+    <th>ID</th>
+    <th>名前</th>
+    <th>年齢</th>
+    <th>性別</th>
+    <th>編集</th> 
+</tr>
+{% for user in users %}
+<tr>
+<td>{{ user.id }}</td>
+<td>{{ user.name }}</td>
+<td>{{ user.age }}</td>
+<td>{{ user.sex}}</td>
+<td><a href='edit/{{user.id}}'>編集</a></td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

@@ -1,0 +1,39 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+h3{
+    border-left:10px solid #666666;
+    margin:10px;
+    padding:10px;
+}
+
+p{
+    margin:10px;
+    padding:10px;
+}
+
+table{
+    margin:10px;
+    width:800px;
+    text-align:center;
+    border-collapse:collapse;
+}
+
+table th{
+    border:solid 1px gray;
+    color:#333333;
+    background:#DDEEFF;
+    padding:10px;
+}
+
+table td{
+    border:solid 1px gray;
+    padding:10px;
+}
+
+table tr:hover{
+    color: rgb(207, 24, 24); /* 文字色を白にする */
+    background-color: #181414; /* 背景色をグレー（#c9c9c9）にする */
+}

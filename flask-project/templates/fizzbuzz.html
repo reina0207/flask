@@ -1,0 +1,22 @@
+<html>
+    <hrad>
+    <title>Sample Page</title>
+</hrad>
+<body>
+    <h1> Hello,Flask!</h1>
+    {% for fizzbuzz in range(1,21) %}
+
+    {% if fizzbuzz%15==0 %}
+    <h2>{{fizzbuzz}}:{{fizzbuzz_message[2]}}</h2>
+    {% elif fizzbuzz%3==0 %}
+    <h2>{{fizzbuzz}}:{{fizzbuzz_message[0]}}</h2>
+    {% elif fizzbuzz%5==0 %}
+    <h2>{{fizzbuzz}}:{{fizzbuzz_message[1]}}</h2>
+    {% else %}
+    <h2>{{fizzbuzz}}</h2>
+    {% endif %}
+
+    {% endfor %}
+</body>
+</html>
+
